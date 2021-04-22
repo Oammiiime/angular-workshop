@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'angular-workshop';
   result = "...";
+  data = ""
+  username = ""
+
+  doSth() {
+    console.log("Clicked ...");
+    this.result = "Change from clicked !!";
+  }
 
   onPress(event: any) {
     console.log(event.target.value);

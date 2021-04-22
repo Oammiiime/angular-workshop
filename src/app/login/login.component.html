@@ -15,8 +15,9 @@
         <td>{{u.firstName }}</td>
         <td>{{u.lastName | uppercaseWithDot}}</td>
         <td>{{u.email}}</td>
-        <app-rating [targetScore] = u.score></app-rating>
+        <app-rating [targetScore] = u.score     (ratingClicked)="onClickedFromRating($event)"></app-rating>
         
       </tr>
     </tbody>
   </table>
+  <h2>{{result}}</h2>

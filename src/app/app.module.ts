@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UppercaseWithDotPipe } from './uppercase-with-dot.pipe';
 import { RatingComponent } from './rating/rating.component';
+import { MainComponent } from './main/main.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     UppercaseWithDotPipe,
-    RatingComponent
+    RatingComponent,
+    MainComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +24,6 @@ import { RatingComponent } from './rating/rating.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }

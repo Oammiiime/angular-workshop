@@ -6,6 +6,7 @@
         <th scope="col">First name</th>
         <th scope="col">Last name</th>
         <th scope="col">Email</th>
+        <th scope="col">Rating</th>
       </tr>
     </thead>
     <tbody>
@@ -14,6 +15,8 @@
         <td>{{u.firstName }}</td>
         <td>{{u.lastName | uppercaseWithDot}}</td>
         <td>{{u.email}}</td>
+        <app-rating [targetScore] = u.score></app-rating>
+        
       </tr>
     </tbody>
   </table>

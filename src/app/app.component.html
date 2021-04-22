@@ -6,4 +6,11 @@
 <button (click)="doSth()" >DO sth</button>
 <p>Angular form</p>
 <input type="text" [(ngModel)]="username" name="username"  >
-<p>{{username}}</p>
+<p>My Tasks:</p>
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task }}
+  </li>
+</ul>
+
+  <app-login></app-login>

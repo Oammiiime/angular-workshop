@@ -10,7 +10,7 @@ export class AppComponent {
   result = "...";
   data = ""
   username = ""
-
+  tasks = ['Task 1', 'Task 2'];
   doSth() {
     console.log("Clicked ...");
     this.result = "Change from clicked !!";
